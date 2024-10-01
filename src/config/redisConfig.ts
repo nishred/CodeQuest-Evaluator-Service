@@ -3,10 +3,9 @@ import serverConfig from "./server.config";
 
 
 const redisConfig = {
-
    port : serverConfig.REDIS_PORT,
-   host : serverConfig.REDIS_HOST
-
+   host : serverConfig.REDIS_HOST,
+   maxRetriesPerRequest : null
 };
 
 
