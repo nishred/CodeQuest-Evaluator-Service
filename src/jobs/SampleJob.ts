@@ -2,7 +2,7 @@ import { IJob } from "../types/bullMqJobDefinition";
 
 
 class SampleJob implements IJob {
-
+  
     name: string;
     payload: Record<string,unknown>;
 
@@ -14,7 +14,8 @@ class SampleJob implements IJob {
 
     handle(): void
     {
-      console.log(this.payload);
+        console.log(this.payload.name);
+    
     }
 
 
