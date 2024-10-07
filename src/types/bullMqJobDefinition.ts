@@ -1,11 +1,12 @@
 import {Job} from "bullmq";
+import { Payload } from "./payload";
 
 
 export interface IJob 
 {
    name : string
-   payload? : Record<string,unknown>
-   handle : (job? :Job) => void
+   payload? : Payload
+   handle : (job?: Job) => void
    failed : (job? :Job) => void
 }
 

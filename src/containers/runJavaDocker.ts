@@ -3,7 +3,7 @@ import createContainer from "./containerFactory";
 import decodeDockerStream from "./dockerHelpter";
 
 
-async function runJavaDocker(code: string,testCases: string): Promise<DockerStreamOutput>
+async function runJavaDocker(code: unknown,testCases: string): Promise<DockerStreamOutput>
 {
 
      const runCommand: string = `echo '${code}' > Main.java && javac Main.java && echo '${testCases}' | java Main`;
